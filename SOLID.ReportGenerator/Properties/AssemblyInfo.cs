@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ReportGenerator")]
+[assembly: AssemblyTitle("SOLID.ReportGenerator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ReportGenerator")]
+[assembly: AssemblyProduct("SOLID.ReportGenerator")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a330e216-2592-4a56-92ae-71cfba22c339")]
+[assembly: Guid("f3c5af73-f639-4c76-bc17-ab90cbe2426a")]
 
 // Version information for an assembly consists of the following four values:
 //
