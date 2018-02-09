@@ -8,12 +8,11 @@ namespace SOLID.ReportGenerator
     internal class ReportGenerator
     {
         private readonly EmployeeDB _employeeDb;
-        private readonly ReportCompiler _reportCompiler = new ReportCompiler();
+        private ICompiler _reportCompiler = new NameFirstCompiler();
         
         public ReportGenerator(EmployeeDB employeeDb)
         {
-            if (employeeDb == null) throw new ArgumentNullException("employeeDb");
-            _employeeDb = employeeDb;
+            _employeeDb = employeeDb ?? throw new ArgumentNullException("employeeDb");
         }
 
 
@@ -37,10 +36,9 @@ namespace SOLID.ReportGenerator
             Console.WriteLine(output);
         }
 
-
-        public void SetOutputFormat(ReportOutputFormatType format)
+        public void SetOutputFormat(ICompiler compiler)
         {
-            _reportCompiler.Format = format;
+            _reportCompiler = compiler ?? throw new ArgumentNullException("compiler");
         }
     }
 }
