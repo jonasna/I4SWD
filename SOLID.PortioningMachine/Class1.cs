@@ -11,6 +11,7 @@ namespace SOLID.PortioningMachine
         public void Swag()
         {
             Console.WriteLine("Dope!");
+            Console.WriteLine("LEL");
         }
     }
 }
