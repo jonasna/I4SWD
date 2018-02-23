@@ -8,5 +8,6 @@ namespace SOLID.PortioningMachine.Weight
 {
     interface IWeight
     {
+        void Lol();
     }
 }
